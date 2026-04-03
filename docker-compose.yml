@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  code-server:
+    build: .
+    container_name: code-server
+    environment:
+      - PUID=0
+      - PGID=0
+      - TZ=Etc/UTC
+      - PASSWORD=YnR&E!u78s4&@sZ5pa$X%65%3hr7Az
+    volumes:
+      - ./config:/config
+    ports:
+      - "8443:8443"
+    restart: unless-stopped
