@@ -5,8 +5,8 @@ services:
     build: .
     container_name: code-server
     environment:
-      - PUID=0
-      - PGID=0
+      - PUID=1000
+      - PGID=1000
       - TZ=Etc/UTC
       - PASSWORD=YnR&E!u78s4&@sZ5pa$X%65%3hr7Az
     volumes:
