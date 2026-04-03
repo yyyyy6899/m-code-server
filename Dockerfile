@@ -1,7 +1,7 @@
 FROM lscr.io/linuxserver/code-server:latest
 
 # Switch to root to install packages
-
+USER root
 # Install packages
 RUN apt-get update && \
     apt-get install -y \
